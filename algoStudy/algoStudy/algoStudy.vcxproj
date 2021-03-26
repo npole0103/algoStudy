@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="binarySearch.cpp" />
     <ClCompile Include="mergeSort.cpp" />
+    <ClCompile Include="quickSort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
