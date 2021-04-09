@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="binarySearch.cpp" />
+    <ClCompile Include="foolSort.cpp" />
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="quickSort.cpp" />
   </ItemGroup>
