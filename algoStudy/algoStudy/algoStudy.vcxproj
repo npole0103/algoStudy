@@ -140,7 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="binarySearch.cpp" />
+    <ClCompile Include="HW2.cpp" />
     <ClCompile Include="foolSort.cpp" />
+    <ClCompile Include="HW2-non.cpp" />
+    <ClCompile Include="HW3.cpp" />
     <ClCompile Include="subSequence.cpp" />
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="quickSort.cpp" />
