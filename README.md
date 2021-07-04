@@ -3,17 +3,19 @@ Algorithm in CPP
 
 ## HW2
 
-합이 같은 부분 집합 구하기 <a href="https://github.com/npole0103/algoStudy/blob/main/algoStudy/HW2_2017203035.pdf">REPORT</a>
+합이 같은 부분 집합 구하기 <a href="https://github.com/npole0103/algoStudy/blob/main/HW2_2017203035.pdf">REPORT</a>
 
 DP, 백트래킹 사용
 
 ## HW3
 
-전구 켜기 끄기 <a href="https://github.com/npole0103/algoStudy/blob/main/algoStudy/HW3_2017203035.pdf">REPORT</a>
+전구 켜기 끄기 <a href="https://github.com/npole0103/algoStudy/blob/main/HW3_2017203035.pdf">REPORT</a>
 
 브루트포스, 그리디 사용
 
 ## 개념 요약
+
+### 알고리즘 효율성, 분석, Order
 
 **정렬 알고리즘**
 
@@ -124,6 +126,8 @@ small O를 만족하면 big O도 당연히 만족함.
 
 ---
 
+### Divide and Conquer
+
 Divide and Conquer : 재귀적으로 문제를 해결하는 기법
 
 Divide : 하나 혹은 그 이상의 작은 인스턴스로 쪼개는 작업
@@ -215,6 +219,8 @@ n -> n^2/c
 
 ---
 
+### Dynamic Programing
+
 **Dynamic Programming 동적계획법**
 
 Divide and Conquer와 유사한 점
@@ -240,6 +246,8 @@ DP Ex)
 3. Optimal Binary Search Tree : 바이너리 서치트리 중에 옵티멀한 것 고르는 것
 
 ---
+
+### The Greedy Approach
 
 **그리디 접근법 – 탐욕적으로 눈에 보이는 좋은 것을 선택하는 방법**
 
@@ -362,7 +370,7 @@ Dp를 사용해서 0-1 버전을 푸는 방법,
 
 ---
 
-**5장 BackTracking**
+### BackTracking
 
 그리디는 아무것도 없는 상태에서 일련의 선택을 해나가면서 최종해를 만듦. 되돌아가는 일은 없음. Greedy Criteria에 맞게 선택.
 
@@ -387,7 +395,7 @@ m개 이하의 색깔을 이용해서 인접한 두 버텍스가 다른 컬러�
 
 ---
 
-**Branch and Bound**
+### Branch and Bound
 
 branch & bound는 optimization 문제에만 적용 가능
 
@@ -423,9 +431,9 @@ lower bound를 사용해야함. 최소 비용을 고르는 것이기 때문에.
 
 ---
 
-**Introduction to Computational Complexity The Sorting Problem**
+### Introduction to Computational Complexity The Sorting Problem
 
-Computational Complexity Analysis
+**Computational Complexity Analysis**
 
 이번 시간에는 주어진 모든 알고리즘에 대한 lower bound에 관심을 갖음.
 이거보단 빠를 수가 없다. 라는 것
@@ -521,6 +529,8 @@ C. NOT proven to be intractable, but for which polynomial-tome algorithms have n
 - m-coloring Problem
 
 ---
+
+### Introduction to the Theory of NP
 
 **NP 이론 : NP는 결정 문제에만 국한에서 이야기함.**
 
