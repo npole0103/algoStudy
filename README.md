@@ -35,6 +35,7 @@ Efficient Methods
 모든 인스턴스를 풀 수 있게 해주는 것.
 
 EX) 순차 탐색 알고리즘, 바이너리 서치 알고리즘
+![image](https://user-images.githubusercontent.com/37138188/184902095-7932757e-30d6-4ff4-84fe-04f1d6dd322a.png)
 
 ---
 
@@ -79,8 +80,10 @@ Input size : n, array size
 p : 주어진 array에서 타겟값이 있을 확률(일단은 알 수 없음)
 A(n) = p * x를 찾는데 필요한 비교 횟수 + (1-p) * 비교 최대 횟수
 1-p는 존재하지 않을 확률
-
+![image](https://user-images.githubusercontent.com/37138188/184902288-97d21d21-c78a-4a6e-98e6-6f8c22297916.png)
 p * (k는 1부터 n까지 평균을 낸 것) + (1-p) * n
+
+![image](https://user-images.githubusercontent.com/37138188/184902460-f1a87cbc-4b42-48c9-96c2-d8311f776f3d.png)
 
 ---
 
@@ -91,8 +94,12 @@ Quadractic Time Algorithm : 인풋 사이즈의 time complexity가 쿼드래틱�
 ex) Average case : Bubble sort - n
 
 ---
+![image](https://user-images.githubusercontent.com/37138188/184902493-f2f6eec8-ac85-4acc-b272-072404d96e9c.png)
 
 **Big O**
+
+![image](https://user-images.githubusercontent.com/37138188/184902551-5d4976c2-2f82-42cc-bb7c-36a644201ee5.png)
+
 O(f(n))은 복잡도와 관련이 있는 집합 g(n)을 모아둔 함수
 
 g(n)은 f(n)이 미리 존재해야하며, g(n)이 속하는지 알기 위해서는 몇몇의 양의 실수 상수 c와 몇몇의 음이 아닌 정수 N이 존재해야한다.
@@ -104,6 +111,7 @@ for all 부분은 input 사이즈가 충분히 큰 경우만 보겠다는 암묵
 ---
 
 **Big Omega**
+![image](https://user-images.githubusercontent.com/37138188/184902598-a787ab81-d6ff-4748-8357-2644c7ae37e7.png)
 
 Big O랑 다른 것은 부등호가 다르다.
 
@@ -112,13 +120,17 @@ g(n)은 f(n) 이상이다. 최고차항보다 이상인 것을 모두 모아놓�
 ---
 
 **Theta 쎄타**
-최고차항이 같은 것
+![image](https://user-images.githubusercontent.com/37138188/184902724-809f2bac-ab43-43e2-8730-f3cf90fea430.png)
+![image](https://user-images.githubusercontent.com/37138188/184902732-76e33627-5582-4044-86e2-20b9a37a548d.png)
 
+최고차항이 같은 것
+![image](https://user-images.githubusercontent.com/37138188/184902777-a76c2003-9fd7-4164-af69-d81f9073fd8c.png)
 g(n)가 만나는 2개의 N 중에 큰 값을 N으로 한다.
 
 ---
 
 **small O**
+![image](https://user-images.githubusercontent.com/37138188/184902806-c10ca4ff-6306-458a-96a0-f1395d429419.png)
 
 big O 와 똑같지만 상수 c에 대해 모든 양의 실수에 대해 성립해야한다.
 
@@ -139,6 +151,7 @@ Combine : 원래 문제의 해를 구하기 위해서 smaller instance를 합하
 ---
 
 **Binary Search**
+![image](https://user-images.githubusercontent.com/37138188/184903000-7fc37e92-9962-49d4-b3c4-f8abb6e88749.png)
 
 Divide
 1. 만약 값을 발견하면 종료
@@ -163,15 +176,20 @@ Conquer : 쪼개진 인스턴스를 재귀적으로 풀어나가는 단계
 ---
 
 **Merge Sort**
+![image](https://user-images.githubusercontent.com/37138188/184903068-9920a43c-8451-4d2d-afe7-a7acc9db2b4a.png)
 
 Merge
 1. S에다가 U와 V에 있는 값들 중 작은 값들을 하나씩 붙인다.
 2. U와 V중 둘 중 먼저 바닥이 나는데, 이때 남은 배열을 S뒤에 붙인다.
+![image](https://user-images.githubusercontent.com/37138188/184903174-d8281100-0d1d-45c0-a847-c96cce5c053d.png)
 
 Best Case :   
 Sort에서 Basic Operation은 비교이다.  
 U와 V에서 비교하려는 값보다 전체가 작은 경우.  
 EX) U배열 자체가 전부 작은 경우? -> B(h, m) = min(h, m)
+
+Worst Case :
+![image](https://user-images.githubusercontent.com/37138188/184903089-a82c4fed-8397-4d83-a319-a1093511a579.png)
 
 ---
 
@@ -184,6 +202,9 @@ Merge Sort와 유사한 점
 Merge Sort와 차이점
 1. 파티션을 할 때 시간이 걸리며 Combine을 할 필요가 없음.
 2. 쪼개지는 게 3부분이다. S1, pivot, S2
+![image](https://user-images.githubusercontent.com/37138188/184903254-2c18a759-790e-4697-a789-9ebef6e7a45b.png)
+![image](https://user-images.githubusercontent.com/37138188/184903336-84be6385-9561-4c49-9124-80bdbf378037.png)
+![image](https://user-images.githubusercontent.com/37138188/184903302-1e6b1c07-b92a-4aec-b259-44f0d33e292f.png)
 
 ---
 
@@ -198,6 +219,7 @@ Best : n log n  / Average : n log n  /  Worst : n log n
 ---
 
 동차선형점화식
+![image](https://user-images.githubusercontent.com/37138188/184903458-f38eadd3-c7e0-4032-be89-ad5e58df1171.png)
 
 tn 계열에 적절한 상수를 곱해서 덧셈으로 표현된 식. Homogeneous == 모든 항이 그렇다
 
@@ -209,6 +231,10 @@ case 1. k차 방정식의 근은 항상 k개가 나온다. 서로 다른 근
 case 2. 중근이 있는 경우
 : ri가 m번 더해지게 만들어야한다. n을 거듭 곱하면서 총 m개를 만든다.
 
+![image](https://user-images.githubusercontent.com/37138188/184903601-0f302245-4c57-4f1a-86cf-576d5dbd813a.png)
+![image](https://user-images.githubusercontent.com/37138188/184903615-18dbc358-29e9-4a6b-a652-24c444dda11f.png)
+![image](https://user-images.githubusercontent.com/37138188/184903624-03a6ddac-b00d-4beb-b11a-3aad41aa13c4.png)
+
 ---
 
 **Divide Conquer가 좋지 않은 경우**
@@ -216,6 +242,7 @@ case 2. 중근이 있는 경우
 1. 사이즈 n짜리 인스턴스를 두 개로 쪼개는데 각각의 인스턴스 사이즈가 n에 가깝다면 == 쪼갰는데 n이랑 비슷함. n -> 2n
 2. 사이즈 n짜리 인스턴스를 잘게 쪼갰는데 각각의 n과 비례하는 관계라면 n/c
 n -> n^2/c
+![image](https://user-images.githubusercontent.com/37138188/184903657-2545092a-ab47-4afe-a2b4-2324c5f548e5.png)
 
 ---
 
@@ -290,6 +317,7 @@ Tree : acyclic + connected + undirected graph
 Spanning Tree : 주어진 그래프의 서브 그래프인데 모든 버텍스를 포함하면서 트리가 되는 것
 
 Minimum Spanning Tree : 스패닝 트리의 엣지 가중치를 모두 더한 것이 최소가 되는 것.
+![image](https://user-images.githubusercontent.com/37138188/184904366-3ec60340-111e-49f0-8625-f57a1ebd54c9.png)
 
 최소 신장 트리 구하는 알고리즘은 2개
 1. Prim’s 알고리즘
@@ -298,12 +326,18 @@ Minimum Spanning Tree : 스패닝 트리의 엣지 가중치를 모두 더한 �
 ---
 
 **Prim’s Algorithm**
+![image](https://user-images.githubusercontent.com/37138188/184904505-556d96ab-f45c-426d-ab11-49ecf8be5b19.png)
+![image](https://user-images.githubusercontent.com/37138188/184904519-2cf5abe9-19ac-478c-bb15-bdce44317fc0.png)
+![image](https://user-images.githubusercontent.com/37138188/184904549-81f925e0-76b0-4ef2-8867-a8e8cb586df9.png)
 
 모든 버텍스는 포함되어야하고 결국 엣지 선택을 봐야함.  
 F는 엣지 서브셋이고, Y는 버텍스 서브셋  
 버텍스 n개가 있다면, 반드시 n-1개가 있어야 트리가 된다.
 
 **Kruskal’s Algorithm**
+![image](https://user-images.githubusercontent.com/37138188/184904579-4f797269-9c95-486c-8b18-7fc487451f9a.png)
+![image](https://user-images.githubusercontent.com/37138188/184904597-321917f6-d4c9-4251-8cf4-2e20f39ecb93.png)
+![image](https://user-images.githubusercontent.com/37138188/184904608-09c2b410-13af-4764-afd2-d67a49bfa591.png)
 
 곳곳에서 커넥티드 서브 그래프가 나오면서 결합이 되는 것.
 
